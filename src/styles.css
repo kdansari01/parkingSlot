@@ -1,0 +1,38 @@
+.car1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-left: 20px;
+}
+.carWidth {
+  width: 400px;
+}
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slot {
+  height: 40px;
+  width: 40px;
+  border: 1px solid gray;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slot:disabled {
+  cursor: not-allowed;
+}
+
+.slot.selected {
+  background: green;
+  color: white;
+}
+
+.slot.filled {
+  background: red;
+  color: white;
+}
